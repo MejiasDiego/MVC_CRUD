@@ -1,5 +1,15 @@
 package views;
 
+/**
+ * Author: Diego Mejias
+ * Version: 1.0
+ * GitHub Repository: https://github.com/MejiasDiego/MVC_CRUD_mejiasDiego
+ * 
+ * This class represents the client form view in the MVC architecture.
+ * It includes the GUI components and layout for managing client data.
+ */
+
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -47,9 +57,6 @@ public class formCliente extends JFrame {
 	private JTextField textField_2Fecha;
 	private JTextField textFieldId;
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -63,9 +70,7 @@ public class formCliente extends JFrame {
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
+	
 	public formCliente() {
 		setTitle("GESTOR DE CLIENTES");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -252,7 +257,6 @@ public class formCliente extends JFrame {
 		    }
 		});
 
-		// Ajustar la asignación de campos en el listener de selección de la tabla
 		table.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
 		    public void valueChanged(ListSelectionEvent event) {
 		        if (!event.getValueIsAdjusting()) {

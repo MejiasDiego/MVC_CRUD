@@ -1,5 +1,15 @@
 package controllers;
 
+/**
+ * Author: Diego Mejias
+ * Version: 1.0
+ * GitHub Repository: https://github.com/MejiasDiego/MVC_CRUD_mejiasDiego
+ * 
+ * This class handles the CRUD operations for the client entity in the MVC architecture.
+ * It includes methods to insert, display, update, and delete client records from the database.
+ * Utilizes Swing components for user interactions and JDBC for database connections.
+ */
+
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
@@ -72,7 +82,6 @@ public class cliente {
             int dni = Integer.parseInt(paramDNI.getText());
             setDNI(dni);
         } catch (NumberFormatException e) {
-            // Maneja el caso donde el DNI no es un número válido
             System.out.println("El DNI ingresado no es un número válido");
             return;
         }
@@ -172,15 +181,12 @@ public class cliente {
             conexionBD objetoConexion = new conexionBD();
             
             try {
-                // Obtener los valores de los campos
                 int idCliente = Integer.parseInt(paramID.getText());
                 String nombreCliente = paramNombre.getText();
                 String apellidoCliente = paramApellido.getText();
                 
-                // Consulta SQL para actualizar el cliente
                 String consulta = "UPDATE cliente SET nombre=?, apellido=?, direccion=?, dni=?, fecha=? WHERE id=?";
                 
-                // Establecer conexión y preparar la consulta
                 Connection con = objetoConexion.estableceConexion();
                 PreparedStatement ps = con.prepareStatement(consulta);
                 ps.setString(1, nombreCliente);
@@ -190,7 +196,6 @@ public class cliente {
                 ps.setString(5, paramFecha.getText());
                 ps.setInt(6, idCliente);
                 
-                // Ejecutar la consulta
                 int filasActualizadas = ps.executeUpdate();
                 
                 if (filasActualizadas > 0) {
@@ -199,7 +204,6 @@ public class cliente {
                     JOptionPane.showMessageDialog(null, "No se pudo modificar el cliente");
                 }
                 
-                // Actualizar la tabla después de la modificación
                 MostrarCliente(tablaCliente);
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(null, "Error al modificar el cliente: " + e.getMessage());
