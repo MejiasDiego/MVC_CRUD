@@ -4,6 +4,8 @@
 
 The application is a comprehensive Java-based system designed using the Model-View-Controller (MVC) architecture and built with the Swing framework for the graphical user interface. Utilizing Maven for dependency management, this application seamlessly integrates with MySQL databases to perform CRUD (Create, Read, Update, Delete) operations on client data.
 
+![demostraciónCrudMejiasDiego](https://github.com/MejiasDiego/MVC_CRUD_mejiasDiego/assets/158473709/e3583184-74dd-4f2e-b691-5d8974e9c000)
+
 ## Key Features
 
 1. **User Authentication**
@@ -28,3 +30,6 @@ The application is a comprehensive Java-based system designed using the Model-Vi
 ## Dependencies
 
 The project leverages Maven to manage dependencies, ensuring that all required libraries and frameworks are included and up-to-date. This includes JDBC for database connectivity and other essential libraries for building a responsive and robust GUI.
+
+
+
