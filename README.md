@@ -16,8 +16,6 @@ The application is a comprehensive Java-based system designed using the Model-Vi
     - Client data is displayed in a sortable and filterable table, making it easy to manage and navigate through records.
 4. **Robust Error Handling**
     - The application includes comprehensive error handling to ensure data integrity and provide clear feedback to users in case of any issues.
-5. **Database Flexibility**
-    - The login module allows for the selection of different databases, facilitating operations across multiple datasets.
 
 ## Technology Stack
 
