@@ -1,2 +1,30 @@
-# MVC_CRUD
-This is a comprehensive Java-based system designed using the Model-View-Controller (MVC) architecture and built with Swing framework for the graphical user interface. Utilizing Maven for dependency management, this application seamlessly integrates with MySQL databases to perform CRUD (Create, Read, Update, Delete) operations on client data.
+# Client Management System
+
+## Overview
+
+The application is a comprehensive Java-based system designed using the Model-View-Controller (MVC) architecture and built with the Swing framework for the graphical user interface. Utilizing Maven for dependency management, this application seamlessly integrates with MySQL databases to perform CRUD (Create, Read, Update, Delete) operations on client data.
+
+## Key Features
+
+1. **User Authentication**
+    - A login screen prompts users to authenticate and select the database they wish to use from a provided list. This ensures secure and tailored access to the system's functionalities.
+2. **Client Management**
+    - Users can add, view, update, and delete client records. Each client record includes fields such as ID, name, surname, address, DNI, and registration date.
+3. **Dynamic Data Display**
+    - Client data is displayed in a sortable and filterable table, making it easy to manage and navigate through records.
+4. **Robust Error Handling**
+    - The application includes comprehensive error handling to ensure data integrity and provide clear feedback to users in case of any issues.
+5. **Database Flexibility**
+    - The login module allows for the selection of different databases, facilitating operations across multiple datasets.
+
+## Technology Stack
+
+- **Java**: Core programming language for application logic.
+- **Swing**: Framework for building the graphical user interface.
+- **MVC Architecture**: Design pattern that separates the application into Model, View, and Controller layers for improved manageability and scalability.
+- **Maven**: Dependency management tool that simplifies project build and configuration.
+- **MySQL**: Database management system for storing client data.
+
+## Dependencies
+
+The project leverages Maven to manage dependencies, ensuring that all required libraries and frameworks are included and up-to-date. This includes JDBC for database connectivity and other essential libraries for building a responsive and robust GUI.
