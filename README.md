@@ -8,13 +8,12 @@ The application is a comprehensive Java-based system designed using the Model-Vi
 
 ## Key Features
 
-1. **User Authentication**
-    - A login screen prompts users to authenticate and select the database they wish to use from a provided list. This ensures secure and tailored access to the system's functionalities.
-2. **Client Management**
+
+1. **Client Management**
     - Users can add, view, update, and delete client records. Each client record includes fields such as ID, name, surname, address, DNI, and registration date.
-3. **Dynamic Data Display**
+2. **Dynamic Data Display**
     - Client data is displayed in a sortable and filterable table, making it easy to manage and navigate through records.
-4. **Robust Error Handling**
+3. **Robust Error Handling**
     - The application includes comprehensive error handling to ensure data integrity and provide clear feedback to users in case of any issues.
 
 ## Technology Stack
